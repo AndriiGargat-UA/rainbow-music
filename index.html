@@ -7,9 +7,20 @@
     <!-- опис для пошукових систем -->
     <meta name="description" content="уроки вокалу, звукзапис, студія звукозапису" />
     <title>Rainbow music</title>
+
+    <!-- Шрифти додаємо одразу після title -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- підключення стилів -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
         <ul>
           <li>
@@ -18,28 +29,30 @@
               title="Our YouTube chanel"
               target="_blank"
               rel="noreferrer noopener"
+              class="header-link"
               >YouTube</a
             >
           </li>
-          <li><a href="#contacts">Наші контакти</a></li>
+          <li><a href="#contacts" class="header-link">Наші контакти</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- HERO section -->
-      <section>
-        <h1>Hi! We are sound recording studio</h1>
-        <img src="images/logo.png" alt="logo" width="800" />
+      <section class="hero">
+        <h1 class="hero-title">Hi! We are sound recording studio</h1>
+        <img class="hero-image" src="images/logo.png" alt="logo" width="800" />
         <iframe
-          width="600"
-          height="350"
+          class="hero-video"
+          width="800"
+          height="450"
           src="https://www.youtube.com/embed/GIwG7splURM"
           title='"ДІТИ ПЕРЕМОГИ"'
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <audio controls>
+        <audio class="hero-audio" controls>
           <source src="audio/Rainbow music studio - ДІТИ ПЕРЕМОГИ.wav" type="audio/wav" />
         </audio>
       </section>
@@ -60,13 +73,13 @@
             <p>Зведення, мастеринг</p>
           </li>
         </ul>
-        <table>
+        <table class="price-table">
           <thead>
             <th>Послуга</th>
             <th>Час виконання</th>
             <th>Ціна</th>
           </thead>
-          <tbody>
+          <tbody class="price-body">
             <tr>
               <td>Звукозапи вокалу</td>
               <td>1 година</td>
@@ -87,7 +100,16 @@
       </section>
     </main>
     <footer>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, ea.</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quo? Ullam nemo dolor totam
+        nihil itaque obcaecati similique nobis amet vel ab cupiditate hic labore aspernatur
+        repudiandae possimus omnis eum beatae eveniet illo culpa, sint reiciendis aliquam tempora!
+        Quos neque quasi cum quidem vitae pariatur laborum ipsam ratione provident, tempora dolorem
+        qui deleniti? Quam ea corporis reiciendis officiis numquam earum placeat animi voluptatum
+        nihil perferendis, vero porro laudantium tempora fugiat enim iste sapiente, dolor quibusdam
+        commodi cum aperiam. Facilis dolore quaerat laudantium eveniet fuga hic tenetur a saepe
+        labore. Vero numquam dolor esse accusantium similique. Neque, adipisci vel! Quis, iste.
+      </p>
       <section id="contacts">
         <h3>Наші контакти</h3>
 
