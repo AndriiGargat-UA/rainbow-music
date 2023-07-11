@@ -98,8 +98,20 @@ section {
   font-size: 18;
   line-height: 1.5;
   text-indent: 20px;
-  width: 350px;
-  margin: 0 auto;
+  width: 500px;
+  border: 2px dashed rgb(47, 199, 80);
+}
+
+.description-second {
+  display: flex;
+  border: 2px solid #450247;
+  flex-grow: 1;
+}
+
+.description-title {
+  width: 150px;
+  border: 2px dashed red;
+  margin-right: 20px;
 }
 
 .description::first-letter {
@@ -107,25 +119,31 @@ section {
 }
 
 .description-cover {
-  width: 900px;
+  display: flex;
+  align-items: baseline;
   padding: 10px;
   border: 1px solid tomato;
 }
 
 .buttons-cover {
   display: flex;
+  /* justify-content: center; */
   flex-wrap: wrap;
-  height: 400px;
+  gap: 10px;
   padding: 15px;
   border: 2px dashed purple;
 }
 
 .filter-button {
-  width: 100px;
+  flex-basis: calc((100% - 30px) / 4);
   height: 50px;
-  margin-right: 10px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.filter-button:hover {
+  color: white;
+  background-color: rgba(137, 43, 226, 0.404);
 }
 
 .filter-button:first-child {
