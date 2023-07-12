@@ -7,6 +7,14 @@
 
 body {
   font-family: var(--main-font);
+
+  /* Фон на всю сторінку */
+  background-image: linear-gradient(45deg, rgba(242, 254, 255, 0), rgba(255, 255, 255, 0.219)),
+    url(/images/light-background.jpg);
+  background-size: cover;
+  background-position: 20% 35%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 li {
@@ -25,6 +33,10 @@ section {
   padding: 80px 0;
 }
 
+p {
+  margin: 0;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -33,6 +45,7 @@ section {
 }
 
 .header {
+  padding-top: 100px;
   display: flex;
   justify-content: center;
 }
@@ -139,11 +152,7 @@ section {
   height: 50px;
   border-radius: 8px;
   cursor: pointer;
-}
-
-.filter-button:hover {
-  color: white;
-  background-color: rgba(137, 43, 226, 0.404);
+  border: none;
 }
 
 .filter-button:first-child {
@@ -153,4 +162,56 @@ section {
 
 .filter-button:last-child {
   background-color: aqua;
+}
+
+.filter-button:hover {
+  color: white;
+  background-color: rgba(137, 43, 226, 0.404);
+  scale: 1.05;
+  box-shadow: 0px 0px 10px 4px rgb(129, 230, 243);
+}
+
+.functional {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.39), rgba(255, 255, 255, 0.219)),
+    url(/images/background.jpg);
+  background-size: cover;
+}
+
+/* Псевдо елементи декор */
+
+.decor-cover {
+  display: flex;
+  justify-content: space-around;
+}
+
+.decor-text {
+  width: 400px;
+  font-size: 20px;
+}
+
+.decor-text::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: aliceblue;
+  border-radius: 50px;
+}
+
+.decor-text::after {
+  content: '';
+  display: block;
+  margin-top: 6px;
+  width: 1px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  transition-property: width;
+  transition-duration: 1000ms;
+}
+
+.decor-text:hover::after {
+  width: 400px;
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0px 0px 10px 4px rgb(255, 255, 255);
 }
