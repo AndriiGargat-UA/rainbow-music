@@ -17,6 +17,10 @@ body {
   background-attachment: fixed;
 }
 
+ul {
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
@@ -45,20 +49,38 @@ p {
 }
 
 .header {
-  padding-top: 100px;
+  padding-top: 65px;
   display: flex;
   justify-content: center;
+  height: 180px;
+  background: rgb(21, 8, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(21, 8, 255, 0.5942752100840336) 0%,
+    rgba(170, 224, 27, 0.5914740896358543) 52%,
+    rgba(0, 212, 255, 0.07886904761904767) 96%
+  );
+}
+
+.header-nav {
+  width: 800px;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-link {
-  font-size: 32px;
+  font-size: 22px;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--main-color, rgb(231, 0, 0));
 }
 
 .header-link:hover,
 .header-link:focus {
-  color: rgb(197, 46, 0);
+  color: rgb(255, 255, 255);
 }
 
 .hero {
@@ -229,8 +251,9 @@ p {
 
 .svg-list {
   display: flex;
-  justify-content: space-around;
   width: 500px;
+  gap: 10px;
+  justify-content: center;
 }
 
 .svg-item {
@@ -248,7 +271,8 @@ p {
 .svg-item:focus {
   color: #450247;
   background-color: rgba(255, 255, 255, 0.329);
-  scale: 1.2;
+  border: 1px solid #450247;
+  scale: 1.4;
   transition-property: color, background-color, scale;
   transition-duration: 200ms;
 }
