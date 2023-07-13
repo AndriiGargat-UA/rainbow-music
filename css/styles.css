@@ -207,11 +207,48 @@ p {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 50px;
   transition-property: width;
-  transition-duration: 1000ms;
+  transition-duration: 500ms;
 }
 
 .decor-text:hover::after {
   width: 400px;
   background-color: rgb(255, 0, 0);
   box-shadow: 0px 0px 10px 4px rgb(255, 255, 255);
+}
+
+.decoration-svg {
+  display: flex;
+  justify-content: space-around;
+}
+
+.svg-icon {
+  width: 35px;
+  height: 35px;
+  fill: currentColor;
+}
+
+.svg-list {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+
+.svg-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  color: white;
+  background-color: #450247;
+  border-radius: 50px;
+}
+
+.svg-item:hover,
+.svg-item:focus {
+  color: #450247;
+  background-color: rgba(255, 255, 255, 0.329);
+  scale: 1.2;
+  transition-property: color, background-color, scale;
+  transition-duration: 200ms;
 }
