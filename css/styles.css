@@ -5,6 +5,21 @@
   --second-font: 'Roboto', sans-serif;
 }
 
+/* animation */
+@keyframes buttonAnimation {
+  0% {
+    background-color: #450247;
+  }
+  50% {
+    background-color: #12d400;
+    scale: 1.5;
+  }
+  100% {
+    background-color: #ec1c00;
+    transform: rotate(360deg);
+  }
+}
+
 body {
   font-family: var(--main-font);
 
@@ -49,16 +64,20 @@ p {
 }
 
 .header {
+  position: fixed;
+  z-index: 100;
+
   padding-top: 65px;
   display: flex;
   justify-content: center;
+  width: 100%;
   height: 180px;
   background: rgb(21, 8, 255);
   background: linear-gradient(
     180deg,
     rgba(21, 8, 255, 0.5942752100840336) 0%,
     rgba(170, 224, 27, 0.5914740896358543) 52%,
-    rgba(0, 212, 255, 0.07886904761904767) 96%
+    rgba(0, 213, 255, 0) 96%
   );
 }
 
@@ -83,17 +102,48 @@ p {
   color: rgb(255, 255, 255);
 }
 
+.fixed-button {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: #450247;
+  border-radius: 50px;
+  border: none;
+}
+
+.fixed-button:hover,
+.fixed-button:focus {
+  animation: buttonAnimation 2s linear infinite;
+}
+
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
+  padding-top: 240px;
 }
 
 .hero-title {
   font-size: 30px;
   text-decoration: underline;
   color: var(--main-color);
+}
+
+.hero-button {
+  position: absolute;
+  top: 260px;
+  right: 100px;
+  width: 80px;
+  height: 50px;
+  padding: 8px;
 }
 
 .hero-image {
@@ -128,19 +178,21 @@ p {
   cursor: pointer;
 }
 
-.description {
-  font-family: var(--second-font);
-  font-size: 18;
-  line-height: 1.5;
-  text-indent: 20px;
+.description-second {
+  overflow: auto;
   width: 500px;
-  border: 2px dashed rgb(47, 199, 80);
+  height: 500px;
+  border: 2px solid #450247;
+  /* flex-grow: 1; */
+  background-color: #b540b938;
 }
 
-.description-second {
-  display: flex;
-  border: 2px solid #450247;
-  flex-grow: 1;
+.description {
+  font-family: var(--second-font);
+  font-size: 24px;
+  line-height: 1.5;
+  text-indent: 20px;
+  border: 2px dashed rgb(47, 199, 80);
 }
 
 .description-title {
@@ -273,6 +325,7 @@ p {
   background-color: rgba(255, 255, 255, 0.329);
   border: 1px solid #450247;
   scale: 1.4;
-  transition-property: color, background-color, scale;
-  transition-duration: 200ms;
+  transition-property: color, background-color, scale, transform;
+  transition-duration: 500ms;
+  transform: rotate(360deg);
 }
