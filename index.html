@@ -257,18 +257,62 @@
         </section>
       </div>
     </main>
-    <footer>
-      <section id="contacts">
-        <h3>Наші контакти</h3>
 
-        <address>
-          <a href="tel:+380986022948">+380986022948</a>
-          <a href="mailto:rainbow.music1312@gmail.com">Надіслати листа</a>
-          <a href="https://goo.gl/maps/cwrVNqVMk92GUF4L7" target="_blank" rel="noreferrer noopener"
-            >Наша локація</a
-          >
-        </address>
-      </section>
-    </footer>
+    <div class="container">
+      <footer>
+        <section id="contacts" class="footer">
+          <address>
+            <a href="tel:+380986022948">+380986022948</a>
+            <a href="mailto:rainbow.music1312@gmail.com">Надіслати листа</a>
+            <a
+              href="https://goo.gl/maps/cwrVNqVMk92GUF4L7"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Наша локація</a
+            >
+          </address>
+
+          <form class="form" name="register-form" autocomplete="on">
+            <label class="label">
+              Email
+              <input type="email" name="email" placeholder="bigboss@gmail.com" />
+            </label>
+
+            <label>
+              Password
+              <input type="password" name="password" minlength="5" maxlength="10" />
+            </label>
+
+            <label>
+              Phone
+              <input type="tel" name="phone" />
+            </label>
+            <button type="submit">Register</button>
+          </form>
+
+          <!-- FEEDBACK -->
+          <form class="form" name="feedback-form">
+            <p>Choose level</p>
+            <label><input type="radio" name="level" value="high" />HIGH</label>
+            <label><input type="radio" name="level" value="medium" checked />MEDIUM</label>
+            <label><input type="radio" name="level" value="low" />LOW</label>
+          </form>
+
+          <!-- Hobbies -->
+          <form class="form" name="hobbies-form">
+            <p>Choose your hobbies</p>
+            <label><input type="checkbox" name="hobby" value="music" checked />Music</label>
+            <label><input type="checkbox" name="hobby" value="sport" />Sport</label>
+            <label><input type="checkbox" name="hobby" value="clubbing" />Clubbing</label>
+
+            <label
+              >Range <input type="range" name="popularity" value="0" min="0" max="100" step="10"
+            /></label>
+
+            <label>DATE AND TIME <input type="datetime-local" /></label>
+          </form>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>

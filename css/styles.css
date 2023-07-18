@@ -329,3 +329,18 @@ p {
   transition-duration: 500ms;
   transform: rotate(360deg);
 }
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 20px;
+  border: 1px solid tomato;
+}
