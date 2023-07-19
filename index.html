@@ -275,12 +275,12 @@
           <form class="form" name="register-form" autocomplete="on">
             <label class="label">
               Email
-              <input type="email" name="email" placeholder="bigboss@gmail.com" />
+              <input type="email" name="email" placeholder="bigboss@gmail.com" required />
             </label>
 
             <label>
               Password
-              <input type="password" name="password" minlength="5" maxlength="10" />
+              <input type="password" name="password" minlength="5" maxlength="10" required />
             </label>
 
             <label>
@@ -310,6 +310,36 @@
             /></label>
 
             <label>DATE AND TIME <input type="datetime-local" /></label>
+          </form>
+
+          <form class="form" name="coment">
+            <!-- Coment -->
+            <label
+              >Feedback
+              <textarea
+                class="comment"
+                name="coment"
+                rows="6"
+                placeholder="Enter your coment here please ..."
+              ></textarea>
+            </label>
+          </form>
+
+          <form class="form" name="chose">
+            <label>Style of music</label>
+            <select name="style" id="style">
+              <optgroup label="JAZZ">
+                <option value="bi-bop">Bi-bop</option>
+                <option value="swing">Swing</option>
+                <option value="lounge">Lounge</option>
+              </optgroup>
+
+              <optgroup label="ROCK">
+                <option value="hard">Hard-rock</option>
+                <option value="metal">Metal</option>
+                <option value="punk">Punk-rock</option>
+              </optgroup>
+            </select>
           </form>
         </section>
       </footer>
