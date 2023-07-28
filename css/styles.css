@@ -81,16 +81,16 @@ p {
   );
 }
 
-.header-nav {
+.header__nav {
   width: 800px;
 }
 
-.header-list {
+.header__list {
   display: flex;
   justify-content: space-between;
 }
 
-.header-link {
+.header__link {
   font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
