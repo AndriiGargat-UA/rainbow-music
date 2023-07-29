@@ -97,8 +97,8 @@ p {
   color: var(--main-color, rgb(231, 0, 0));
 }
 
-.header-link:hover,
-.header-link:focus {
+.header__link:hover,
+.header__link:focus {
   color: rgb(255, 255, 255);
 }
 
@@ -131,13 +131,13 @@ p {
   padding-top: 240px;
 }
 
-.hero-title {
+.hero__title {
   font-size: 30px;
   text-decoration: underline;
   color: var(--main-color);
 }
 
-.hero-button {
+.hero__button {
   position: absolute;
   top: 260px;
   right: 100px;
@@ -146,18 +146,18 @@ p {
   padding: 8px;
 }
 
-.hero-image {
+.hero__image {
   margin-bottom: 40px;
   background-color: rgb(253, 244, 162);
   border-radius: 20px;
 }
 
-.hero-video {
+.hero__video {
   margin-bottom: 40px;
   border-radius: 20px;
 }
 
-.hero-audio {
+.hero__audio {
   width: 800px;
 }
 

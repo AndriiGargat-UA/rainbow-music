@@ -27,6 +27,9 @@
     />
     <!-- потім вже інші -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- SASS -->
+    <!-- <link rel="stylesheet" href="sass/main.css" /> -->
   </head>
   <body>
     <header class="header">
@@ -55,10 +58,10 @@
       <div class="container">
         <!-- HERO section -->
         <section class="hero">
-          <h1 class="hero-title">Hi! We are sound recording studio</h1>
-          <img class="hero-image" src="images/logo.png" alt="logo" width="800" />
+          <h1 class="hero__title">Hi! We are sound recording studio</h1>
+          <img class="hero__image" src="images/logo.png" alt="logo" width="800" />
           <iframe
-            class="hero-video"
+            class="hero__video"
             width="800"
             height="450"
             src="https://www.youtube.com/embed/GIwG7splURM"
@@ -67,13 +70,14 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <audio class="hero-audio" controls>
+          <audio class="hero__audio" controls>
             <source src="audio/Rainbow music studio - ДІТИ ПЕРЕМОГИ.wav" type="audio/wav" />
           </audio>
-          <button class="filter-button hero-button" type="button" data-modal-open>
+          <button class="filter-button hero__button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </section>
+
         <section>
           <h2>Послуги</h2>
           <ul>
